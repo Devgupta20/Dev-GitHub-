@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form - Inline</title>
+</head>
+<body>
+
+    <h2>Share Your Thoughts</h2>
+
+    <form action="/submit" method="POST">
+        <p>
+            <label for="v2_name">Name:</label><br>
+            <input type="text" id="v2_name" name="name" required>
+        </p>
+
+        <p>
+            <label for="v2_email">Email:</label><br>
+            <input type="email" id="v2_email" name="email" required>
+        </p>
+
+        <p>
+            <strong>Your Rating:</strong><br>
+            <input type="radio" id="star1" name="rating" value="1"> <label for="star1">1</label>
+            <input type="radio" id="star2" name="rating" value="2"> <label for="star2">2</label>
+            <input type="radio" id="star3" name="rating" value="3"> <label for="star3">3</label>
+            <input type="radio" id="star4" name="rating" value="4"> <label for="star4">4</label>
+            <input type="radio" id="star5" name="rating" value="5" checked> <label for="star5">5</label>
+        </p>
+
+        <p>
+            <label for="v2_comments">Comments:</label><br>
+            <textarea id="v2_comments" name="comments" rows="6" cols="30"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Send My Feedback">
+        </p>
+    </form>
+
+</body>
+</html>
